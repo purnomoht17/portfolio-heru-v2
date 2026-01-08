@@ -54,30 +54,31 @@ export default function Home() {
   };
 
   return (
-    <main className="bg-[#0f172a] min-h-screen relative">
+
+    <main className="bg-[#0f172a] min-h-screen relative w-full max-w-[100vw] overflow-x-hidden">
       
       {/* 1. Dashboard */}
-      <section id="dashboard" className="reveal-on-scroll">
+      <section id="dashboard" className="reveal-on-scroll w-full">
         <DashboardSection />
       </section>
 
       {/* 2. Resume */}
-      <section id="resume" className="reveal-on-scroll">
+      <section id="resume" className="reveal-on-scroll w-full">
         <ResumeSection />
       </section>
 
       {/* 3. Projects */}
-      <section id="projects" className="reveal-on-scroll">
+      <section id="projects" className="reveal-on-scroll w-full">
         <ProjectSection />
       </section>
 
       {/* 4. Contact */}
-      <section id="contact" className="reveal-on-scroll">
+      <section id="contact" className="reveal-on-scroll w-full">
         <ContactSection />
       </section>
 
       {/* Footer */}
-      <div className="reveal-on-scroll">
+      <div className="reveal-on-scroll w-full">
         <Footer />
       </div>
 
