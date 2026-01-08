@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './ProjectCard.module.css';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion'; 
 
 interface ProjectItem {
@@ -13,27 +13,36 @@ interface ProjectItem {
   description: string;
   techStack?: string[];
   filename?: string;
-  link?: string;
+  link?: string;       
+  detailUrl?: string | null; 
 }
 
 interface ProjectCardProps {
   project: ProjectItem;
-  onProjectClick: (id: number | string) => void;
 }
 
-const ProjectCard = ({ project, onProjectClick }: ProjectCardProps) => {
+const ProjectCard = ({ project }: ProjectCardProps) => {
+  const href = project.detailUrl || project.link || '#';
+
   return (
-    <div className={styles.card}>
+    <motion.div 
+      className={styles.card}
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+    >
       
-      {/* Header Gambar */}
+      <Link 
+        href={href} 
+        className={styles.cardLink}
+        aria-label={`Lihat detail ${project.title}`}
+      >
+      </Link>
+
+      {/* 2. Header Gambar */}
       {project.filename && (
-        <motion.div 
-          className={styles.imageHeader}
-          onClick={() => onProjectClick(project.id)}
-          layoutId={`project-image-container-${project.id}`}
-          whileHover={{ scale: 1.02 }}
-          transition={{ duration: 0.3 }}
-        >
+        <div className={styles.imageHeader}>
           <Image
             src={`/images/${project.filename}`}
             alt={project.title}
@@ -42,10 +51,10 @@ const ProjectCard = ({ project, onProjectClick }: ProjectCardProps) => {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
             priority={false} 
           />
-        </motion.div>
+        </div>
       )}
 
-      {/* Detail Project (Bagian Bawah Kartu) */}
+      {/* 3. Detail Project */}
       <div className={styles.cardBody}>
         <h2 className={styles.projectTitle}>{project.title}</h2>
 
@@ -65,19 +74,15 @@ const ProjectCard = ({ project, onProjectClick }: ProjectCardProps) => {
 
         <p className={styles.description}>{project.description}</p>
 
-        {/* Link Button */}
-        {project.link && (
-          <Link 
-            href={project.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className={styles.linkBtn}
-          >
-            Lihat Project <FaExternalLinkAlt size={12} />
-          </Link>
-        )}
+        <div 
+          className={styles.linkBtn} 
+          style={{ zIndex: 0, marginTop: 'auto' }} 
+        >
+          Lihat Project <FaArrowRight size={12} style={{ marginLeft: '8px' }} />
+        </div>
+
       </div>
-    </div>
+    </motion.div>
   );
 };
 

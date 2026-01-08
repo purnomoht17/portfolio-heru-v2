@@ -1,0 +1,45 @@
+.section {
+  background-color: #0b1120;
+  padding: 60px 0;
+  border-top: 1px solid #1e293b;
+  text-align: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.label {
+  color: #64748b;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.techItem {
+  background: rgba(30, 41, 59, 0.4);
+  color: #94a3b8;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: 1px solid #334155;
+  font-family: 'Courier New', monospace; 
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.techItem:hover {
+  border-color: #0e7490;
+  color: #22d3ee;
+  background: rgba(14, 116, 144, 0.1);
+}

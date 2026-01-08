@@ -6,6 +6,7 @@ export const projectsData = [
     techStack: ["Node.js", "Express", "MySql", "Prisma ORM", "Railway", "Vercel"],
     filename: "sistem-kasir.png",
     link: "https://github.com/purnomoht17/sistem-kasir.git", 
+    detailUrl: "/sistem-kasir"
   },
   {
     id: 2,
@@ -14,12 +15,6 @@ export const projectsData = [
     techStack: ["Node.js", "Express", "MongoDB", "Prisma ORM", "Railway", "Vercel"],
     filename: "project1.png",
     link: "https://digisteels-web.vercel.app/", 
-  },
-  {
-    id: 3,
-    title: "Backend Development - Basic Social Media",
-    description: "Membangun fitur dasar media sosial seperti autentikasi pengguna (login dan signup) menggunakan framework Laravel untuk memahami konsep fundamental pengembangan backend, routing, dan manajemen basis data dengan PostgreSQL.",
-    techStack: ["PHP", "Laravel", "PostgreSQL"],
-    link: "https://github.com/purnomoht17/UAS_SocialMedia_Kelompok7.git",
-  },
+    detailUrl: "/digisteels"
+  }
 ];

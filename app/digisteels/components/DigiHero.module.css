@@ -1,0 +1,169 @@
+.heroSection {
+  position: relative;
+  padding: 140px 20px 100px;
+  background-color: #0f172a;
+  color: white;
+  overflow: hidden;
+  border-bottom: 1px solid #334155;
+}
+
+.heroSection::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: 
+    linear-gradient(rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.95)),
+    url("https://www.transparenttextures.com/patterns/carbon-fibre.png");
+  z-index: 0;
+}
+
+.heroSection::after {
+  content: "";
+  position: absolute;
+  top: -20%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(14, 116, 144, 0.15) 0%, transparent 70%);
+  filter: blur(80px);
+  z-index: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.textContent {
+  opacity: 0;
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.badge {
+  background: rgba(30, 41, 59, 0.8);
+  border: 1px solid #334155;
+  color: #94a3b8;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 24px;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+  background: linear-gradient(to right, #f8fafc 20%, #94a3b8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  font-size: 1.15rem;
+  color: #cbd5e1;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  max-width: 540px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 16px;
+}
+
+.btnPrimary {
+  background-color: #0e7490;
+  color: white;
+  padding: 14px 32px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s;
+  border: 1px solid #155e75;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.btnPrimary:hover {
+  background-color: #0891b2;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(8, 145, 178, 0.3);
+}
+
+.btnOutline {
+  background: transparent;
+  color: #e2e8f0;
+  padding: 14px 32px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #475569;
+  transition: all 0.2s;
+}
+
+.btnOutline:hover {
+  border-color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.visualContent {
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards 0.3s;
+}
+
+.mockupCard {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboardImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.line {
+  height: 4px;
+  width: 60px;
+  background: #0e7490;
+  margin-bottom: 20px;
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 1024px) {
+  .container { grid-template-columns: 1fr; text-align: center; }
+  .description { margin: 0 auto 40px; }
+  .buttonGroup { justify-content: center; }
+  .visualContent { display: none; }
+}
+
+@media (max-width: 390px) {
+  .title { font-size: 2.2rem; }
+  .buttonGroup { flex-direction: column; }
+  .btnPrimary, .btnOutline { width: 100%; text-align: center; }
+}
