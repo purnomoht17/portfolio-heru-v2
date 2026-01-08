@@ -45,14 +45,6 @@ const ProjectSection = () => {
               />
             ))}
           </div>
-
-          {/* CTA Section */}
-          <section className={styles.ctaSection}>
-            <h2 className={styles.ctaTitle}>Let&apos;s build something together</h2>
-            <Link href="#contact" className={styles.ctaBtn}>
-              Contact Me
-            </Link>
-          </section>
         </div>
 
         {mounted && createPortal(

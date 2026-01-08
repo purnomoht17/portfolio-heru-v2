@@ -28,13 +28,12 @@ const Experience = ({ data }: ExperienceProps) => {
           <div className={styles.leftCol}>
             {exp.image && (
               <div className={styles.imageWrapper}>
-                {/* Asumsi gambar disimpan di public/images/ */}
                 <Image 
-                src={`/images/${exp.image}`} 
-                alt={exp.company}
-                fill
-                className={styles.companyLogo}
-                sizes="(max-width: 768px) 100vw, 300px"
+                  src={`/images/${exp.image}`} 
+                  alt={exp.company}
+                  fill
+                  className={styles.companyLogo}
+                  sizes="(max-width: 768px) 100vw, 300px"
                 />
               </div>
             )}

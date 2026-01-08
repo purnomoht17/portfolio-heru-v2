@@ -120,7 +120,7 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
@@ -132,12 +132,14 @@
 }
 
 .imageWrapper {
+  position: relative;
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16 / 9; 
   border-radius: 1rem;
   overflow: hidden;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   border: 1px solid var(--border-color);
+  background-color: rgba(0,0,0,0.2);
 }
 
 .companyLogo {
@@ -165,16 +167,19 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-main);
+  line-height: 1.3;
 }
 
 .company {
   font-size: 0.9rem;
   color: var(--text-muted);
+  margin-top: 0.25rem;
 }
 
 .description {
   color: var(--text-muted);
   line-height: 1.7;
+  font-size: 1rem;
 }
 
 .skillCategory {
@@ -212,35 +217,6 @@
   border-color: var(--accent-primary);
 }
 
-.itemRow {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  margin-bottom: 3rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.itemRow:last-child {
-  border-bottom: none;
-  margin-bottom: 0;
-}
-
-.imageWrapper {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 16 / 9; 
-  border-radius: 1rem;
-  overflow: hidden;
-  margin-bottom: 1.5rem;
-  border: 1px solid var(--border-color);
-  background-color: rgba(0,0,0,0.2);
-}
-
-.companyLogo {
-  object-fit: cover;
-}
-
 .location, .degree {
   font-size: 0.9rem;
   color: var(--text-muted);
@@ -273,5 +249,68 @@
   .itemRow {
     grid-template-columns: 300px 1fr; 
     gap: 2rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .wrapper {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .card {
+    padding: 1.25rem;
+    border-radius: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .itemRow {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .imageWrapper {
+    aspect-ratio: 2 / 1; 
+    margin-bottom: 1rem;
+  }
+
+  .infoBox {
+    padding: 1rem;
+  }
+
+  .role {
+    font-size: 1rem;
+  }
+
+  .period, .company, .location, .degree {
+    font-size: 0.85rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .skillBadge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .downloadBtn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
   }
 }
