@@ -1,0 +1,106 @@
+.
+├── README.md
+├── app
+│   ├── digisteels
+│   │   ├── components
+│   │   │   ├── DigiFeatures.module.css
+│   │   │   ├── DigiFeatures.tsx
+│   │   │   ├── DigiHero.module.css
+│   │   │   ├── DigiHero.tsx
+│   │   │   ├── DigiTech.module.css
+│   │   │   └── DigiTech.tsx
+│   │   ├── page.module.css
+│   │   └── page.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── sistem-kasir
+│       ├── components
+│       │   ├── FeatureSection.module.css
+│       │   ├── FeatureSection.tsx
+│       │   ├── Hero.module.css
+│       │   ├── Hero.tsx
+│       │   ├── TechStack.module.css
+│       │   └── TechStack.tsx
+│       ├── page.module.css
+│       └── page.tsx
+├── components
+│   ├── layout
+│   │   ├── Footer.module.css
+│   │   └── Footer.tsx
+│   └── sections
+│       ├── contacts
+│       │   ├── components
+│       │   │   ├── ContactCard.module.css
+│       │   │   └── ContactCard.tsx
+│       │   ├── contact.module.css
+│       │   └── page.tsx
+│       ├── dashboard
+│       │   ├── components
+│       │   │   ├── Connect.module.css
+│       │   │   ├── Connect.tsx
+│       │   │   ├── Hero.module.css
+│       │   │   ├── Hero.tsx
+│       │   │   ├── Navigation.module.css
+│       │   │   ├── Navigation.tsx
+│       │   │   ├── TechStack.module.css
+│       │   │   └── TechStack.tsx
+│       │   ├── page.module.css
+│       │   └── page.tsx
+│       ├── project
+│       │   ├── components
+│       │   │   ├── ProjectCard.module.css
+│       │   │   └── ProjectCard.tsx
+│       │   ├── page.tsx
+│       │   └── project.module.css
+│       └── resume
+│           ├── components
+│           │   ├── Education.tsx
+│           │   ├── Experience.tsx
+│           │   └── Skills.tsx
+│           ├── page.tsx
+│           └── resume.module.css
+├── eslint.config.mjs
+├── next-env.d.ts
+├── next.config.ts
+├── package-lock.json
+├── package.json
+├── postcss.config.mjs
+├── public
+│   ├── data
+│   │   ├── projectData.js
+│   │   └── resumeData.js
+│   ├── file.svg
+│   ├── files
+│   │   └── Heru_Purnomo_Resume.pdf
+│   ├── globe.svg
+│   ├── images
+│   │   ├── akom-baksos.JPG
+│   │   ├── biro-kesekretariatan.jpg
+│   │   ├── digisteels
+│   │   │   ├── digisteels-dashboard.png
+│   │   │   ├── page1.png
+│   │   │   ├── page2.png
+│   │   │   └── page3.png
+│   │   ├── prj2025.jpg
+│   │   ├── profile.jpg
+│   │   ├── project1.png
+│   │   ├── project3.png
+│   │   ├── project4.png
+│   │   ├── sekertaris-pelaksana.JPG
+│   │   ├── sistem-kasir
+│   │   │   ├── page1.png
+│   │   │   ├── page2.png
+│   │   │   ├── page3.png
+│   │   │   ├── page4.png
+│   │   │   └── page5.png
+│   │   ├── sistem-kasir.png
+│   │   └── ukm-oh.jpg
+│   ├── next.svg
+│   ├── vercel.svg
+│   └── window.svg
+├── struktur-projek.txt
+└── tsconfig.json
+
+23 directories, 81 files
