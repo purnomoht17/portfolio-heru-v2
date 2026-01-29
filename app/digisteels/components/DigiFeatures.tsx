@@ -6,17 +6,17 @@ const features = [
   {
     title: "Katalog Produk & Varian",
     desc: "Tampilan katalog stainless steel (201, 304, 316) yang terorganisir. Mendukung detail varian ukuran, ketebalan, dan harga dinamis.",
-    img: "/images/digisteels/page1.png" 
+    img: "/images/digisteels/page1.webp" 
   },
   {
     title: "Dashboard Admin Komprehensif",
     desc: "Pusat kontrol untuk memantau pesanan masuk (Ongoing Orders) dan riwayat penjualan dengan status real-time.",
-    img: "/images/digisteels/page2.png"
+    img: "/images/digisteels/page2.webp"
   },
   {
     title: "Analitik Penjualan Otomatis",
     desc: "Visualisasi data penjualan harian dan bulanan dengan grafik batang interaktif untuk membantu pengambilan keputusan bisnis.",
-    img: "/images/digisteels/page3.png"
+    img: "/images/digisteels/page3.webp"
   }
 ];
 

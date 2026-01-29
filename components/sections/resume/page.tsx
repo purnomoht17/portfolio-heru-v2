@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaDownload } from 'react-icons/fa';
 import styles from './resume.module.css';
 import Experience from './components/Experience';
 import Education from './components/Education';

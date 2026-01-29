@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Hero.module.css';
-import profilePic from '@/public/images/profile.jpg'; 
+import profilePic from '@/public/images/profile.webp'; 
 
 const Hero = () => {
   return (

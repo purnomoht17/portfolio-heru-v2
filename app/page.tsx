@@ -12,29 +12,7 @@ export default function Home() {
   const [showTopBtn, setShowTopBtn] = useState(false);
   
   useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: '0px',
-      threshold: 0.15 
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-        }
-      });
-    }, observerOptions);
-
-    const hiddenElements = document.querySelectorAll('.reveal-on-scroll');
-    hiddenElements.forEach((el) => observer.observe(el));
-
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
     const handleScroll = () => {
-      
       if (window.scrollY > 300) {
         setShowTopBtn(true);
       } else {
@@ -54,31 +32,30 @@ export default function Home() {
   };
 
   return (
-
     <main className="bg-[#0f172a] min-h-screen relative w-full max-w-[100vw] overflow-x-hidden">
       
-      {/* 1. Dashboard */}
-      <section id="dashboard" className="reveal-on-scroll w-full">
+      {/* 1. Dashboard - class reveal-on-scroll dihapus */}
+      <section id="dashboard" className="w-full">
         <DashboardSection />
       </section>
 
-      {/* 2. Resume */}
-      <section id="resume" className="reveal-on-scroll w-full">
+      {/* 2. Resume - class reveal-on-scroll dihapus */}
+      <section id="resume" className="w-full">
         <ResumeSection />
       </section>
 
-      {/* 3. Projects */}
-      <section id="projects" className="reveal-on-scroll w-full">
+      {/* 3. Projects - class reveal-on-scroll dihapus */}
+      <section id="projects" className="w-full">
         <ProjectSection />
       </section>
 
-      {/* 4. Contact */}
-      <section id="contact" className="reveal-on-scroll w-full">
+      {/* 4. Contact - class reveal-on-scroll dihapus */}
+      <section id="contact" className="w-full">
         <ContactSection />
       </section>
 
-      {/* Footer */}
-      <div className="reveal-on-scroll w-full">
+      {/* Footer - class reveal-on-scroll dihapus */}
+      <div className="w-full">
         <Footer />
       </div>
 

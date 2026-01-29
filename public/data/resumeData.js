@@ -9,7 +9,7 @@ export const resumeData = {
       company: "PT Avirama Wigar Pratista",
       location: "Jawa Barat",
       description: "Selama Pekan Raya Jakarta 2025, saya dipercaya sebagai Kepala Logistik Pergudangan, di mana saya bertugas mengatur arus keluar-masuk barang dan memastikan semua transaksi tercatat dengan rapi. Pengalaman ini melatih saya dalam manajemen data, tanggung jawab operasional, serta kemampuan bekerja di bawah tekanan — keterampilan yang kini saya terapkan dalam proyek IT saya.",
-      image: "prj2025.jpg"
+      image: "prj2025.webp"
     },
 
     {
@@ -19,7 +19,7 @@ export const resumeData = {
       company: "BEM Universitas Tarumanagara",
       location: "Jakarta Barat",
       description: "Sebagai anggota Biro Kesekretariatan, saya berperan dalam mendukung operasional administrasi BEM Universitas Tarumanagara. Saya mengelola surat-menyurat dan dokumentasi internal organisasi, membantu koordinasi rapat serta penyusunan laporan kegiatan, dan memastikan pengelolaan inventaris internal berjalan tertib dan efisien. Pengalaman ini mengasah kemampuan saya dalam manajemen waktu, komunikasi tim, dan ketelitian dalam pengelolaan dokumen organisasi.",
-      image: "biro-kesekretariatan.jpg"
+      image: "biro-kesekretariatan.webp"
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ export const resumeData = {
       company: "BEM Universitas Tarumanagara",
       location: "Jakarta Barat",
       description: "Berperan dalam memastikan kelancaran pelaksanaan Tarumanagara Job Fair 2025 melalui koordinasi administratif dan dokumentasi kegiatan. Menjalin komunikasi antara panitia internal dan pihak eksternal, serta mengatur jadwal rapat dan agenda acara agar kegiatan berjalan efisien dan tepat waktu. Pengalaman ini memperkuat kemampuan saya dalam perencanaan, komunikasi lintas tim, dan pengelolaan waktu pada proyek berskala besar.",
-      image: "sekertaris-pelaksana.JPG"
+      image: "sekertaris-pelaksana.webp"
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ export const resumeData = {
       company: "BEM Universitas Tarumanagara",
       location: "Jakarta Barat",
       description: "Bertanggung jawab penuh atas perencanaan mobilitas dan logistik akomodasi seluruh panitia (perjalanan dan di lokasi), sekaligus mengelola risiko transportasi untuk menjamin kelancaran dan efisiensi operasional bakti sosial.",
-      image: "akom-baksos.JPG"
+      image: "akom-baksos.webp"
     },
     {
       id: 5,
@@ -46,7 +46,7 @@ export const resumeData = {
       company: "BEM Universitas Tarumanagara",
       location: "Jakarta Barat",
       description: "Bertanggung jawab dalam pengelolaan dan penyediaan perlengkapan acara UKM Open House 2025, termasuk pendataan, distribusi, serta koordinasi kebutuhan logistik agar kegiatan berjalan lancar dan tepat waktu.",
-      image: "ukm-oh.jpg"
+      image: "ukm-oh.webp"
     },
   ],
 

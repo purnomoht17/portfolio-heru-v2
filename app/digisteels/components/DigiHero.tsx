@@ -39,7 +39,7 @@ const DigiHero = () => {
         <div className={styles.visualContent}>
           <div className={styles.mockupCard}>
             <img 
-              src="/images/digisteels/digisteels-dashboard.png" 
+              src="/images/digisteels/digisteels-dashboard.webp" 
               alt="Digisteels Dashboard Preview" 
               className={styles.dashboardImage}
             />

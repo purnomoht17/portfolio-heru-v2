@@ -14,7 +14,7 @@ const featuresData: FeatureItem[] = [
       "Filter laporan berdasarkan tanggal dan cabang toko.",
       "Ekspor laporan ke PDF dan Excel."
     ],
-    imageSrc: "/images/sistem-kasir/page1.png",
+    imageSrc: "/images/sistem-kasir/page1.webp",
     imageAlt: "Dashboard Owner KasirPro"
   },
   {
@@ -26,7 +26,7 @@ const featuresData: FeatureItem[] = [
       "Dukungan pembayaran Tunai dan QRIS.",
       "Penerapan kode promo/diskon langsung di keranjang."
     ],
-    imageSrc: "/images/sistem-kasir/page2.png",
+    imageSrc: "/images/sistem-kasir/page2.webp",
     imageAlt: "Halaman Transaksi Kasir"
   },
   {
@@ -38,7 +38,7 @@ const featuresData: FeatureItem[] = [
       "Pencarian produk cepat.",
       "Edit dan tambah produk dengan mudah."
     ],
-    imageSrc: "/images/sistem-kasir/page3.png",
+    imageSrc: "/images/sistem-kasir/page3.webp",
     imageAlt: "Manajemen Inventaris"
   },
   {
@@ -47,7 +47,7 @@ const featuresData: FeatureItem[] = [
     points: [
       "Buat promo tipe persen atau nominal.",
     ],
-    imageSrc: "/images/sistem-kasir/page4.png",
+    imageSrc: "/images/sistem-kasir/page4.webp",
     imageAlt: "Manajemen Promo dan Admin"
   },
     {
@@ -58,7 +58,7 @@ const featuresData: FeatureItem[] = [
       "Log aktivitas shift kasir (Modal awal, selisih setoran).",
       "Pengaturan status aktif/non-aktif pengguna."
     ],
-    imageSrc: "/images/sistem-kasir/page5.png",
+    imageSrc: "/images/sistem-kasir/page5.webp",
     imageAlt: "Manajemen Promo dan Admin"
   }
 ];
